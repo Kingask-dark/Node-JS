@@ -4,8 +4,8 @@
     "uuid": "^8.3.2"
   },
   "scripts": {
-    "start": "node index",
-    "dev": "nodemon index"
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
@@ -13,7 +13,7 @@
 
   "name": "node-js",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "author": "King Ask",
   "license": "ISC",
   "description": ""
