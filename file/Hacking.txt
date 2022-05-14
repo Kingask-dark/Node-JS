@@ -1,0 +1,48 @@
+Hacking definition: What is hacking?
+
+Hacking refers to activities that seek to compromise digital devices, such as computers, smartphones, tablets, and even entire networks. And while hacking might not always be for malicious purposes, nowadays most references to hacking, and hackers, characterize it/them as unlawful activity by cybercriminals—motivated by financial gain, protest, information gathering (spying), and even just for the “fun” of the challenge.
+
+Who are hackers?
+
+Many think that “hacker” refers to some self-taught whiz kid or rogue programmer skilled at modifying computer hardware or software so it can be used in ways outside the original developers' intent. But this is a narrow view that doesn't begin to encompass the wide range of reasons why someone turns to hacking. To learn about the various motivations different types of hackers might have, read Under the hoodie: why money, power, and ego drive hackers to cybercrime. Also, check out our Malwarebytes Labs' podcast episode, interviewing hacker Sick Codes:
+
+Hacking tools: How do hackers hack?
+
+Hacking is typically technical in nature (like creating malvertising that deposits malware in a drive-by attack requiring no user interaction). But hackers can also use psychology to trick the user into clicking on a malicious attachment or providing personal data. These tactics are referred to as “social engineering.”
+
+In fact, it's accurate to characterize hacking as an over-arching umbrella term for activity behind most if not all of the malware and malicious cyberattacks on the computing public, businesses, and governments. Besides social engineering and malvertising, common hacking techniques include:
+
+    Botnets
+    Browser hijacks
+    Denial of service (DDoS) attacks
+    Ransomware
+    Rootkits
+    Trojans
+    Viruses
+    Worms
+From script kiddies to organized cybercrime
+
+As such, hacking has evolved from teenage mischief into a billion-dollar growth business, whose adherents have established a criminal infrastructure that develops and sells turnkey hacking tools to would-be crooks with less sophisticated technical skills (known as “script kiddies”). As an example, see: Emotet.
+
+In another example, Windows users are reportedly the target of a wide-spread cybercriminal effort offering remote access to IT systems for just $10 via a dark web hacking store—potentially enabling attackers to steal information, disrupt systems, deploy ransomware, and more. Systems advertised for sale on the forum range from Windows XP through to Windows 10. The storeowners even offer tips for how those using the illicit logins can remain undetected.
+
+Types of hacking/hackers
+
+Broadly speaking, you can say that hackers attempt to break into computers and networks for any of four reasons.
+
+    There's criminal financial gain, meaning the theft of credit card numbers or defrauding banking systems.
+    Next, gaining street cred and burnishing one's reputation within hacker subculture motivates some hackers as they leave their mark on websites they vandalize as proof that they pulled off the hack.
+    Then there's corporate espionage, when one company's hackers seek to steal information on a competitor's products and services to gain a marketplace advantage.
+    Finally, entire nations engage in state-sponsored hacking to steal business and/or national intelligence, to destabilize their adversaries' infrastructure, or even to sow discord and confusion in the target country. (There's consensus that China and Russia have carried out such attacks, including one on Forbes.com. In addition, the recent attacks on the Democratic National Committee [DNC] made the news in a big way—especially after Microsoft says hackers accused of hacking into the Democratic National Committee have exploited previously undisclosed flaws in Microsoft's Windows operating system and Adobe Systems' Flash software. There are also instances of hacking courtesy of the United States government.)
+
+There's even another category of cybercriminals: the hacker who is politically or socially motivated for some cause. Such hacker-activists, or “hacktivists,” strive to focus public attention on an issue by garnering unflattering attention on the target—usually by making sensitive information public. For notable hacktivist groups, along with some of their more famous undertakings, see Anonymous, WikiLeaks, and LulzSec.
+
+Ethical hacking? White, black, and grey hats
+
+There's also another way we parse hackers. Remember the classic old Western movies? Good guys = white hats. Bad guys = black hats. Today's cybersecurity frontier retains that Wild West vibe, with white hat and black hat hackers, and even a third in-between category.
+
+If a hacker is a person with deep understanding of computer systems and software, and who uses that knowledge to somehow subvert that technology, then a black hat hacker does so for stealing something valuable or other malicious reasons. So it's reasonable to assign any of those four motivations (theft, reputation, corporate espionage, and nation-state hacking) to the black hats.
+
+White hat hackers, on the other hand, strive to improve the security of an organization's security systems by finding vulnerable flaws so that they can prevent identity theft or other cybercrimes before the black hats notice. Corporations even employ their own white hat hackers as part of their support staff, as a recent article from the New York Times online edition highlights. Or businesses can even outsource their white hat hacking to services such as HackerOne, which tests software products for vulnerabilities and bugs for a bounty.
+
+Finally, there's the gray hat crowd, hackers who use their skills to break into systems and networks without permission (just like the black hats). But instead of wreaking criminal havoc, they might report their discovery to the target owner and offer to repair the vulnerability for a small fee.
