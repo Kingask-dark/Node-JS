@@ -8,11 +8,34 @@ const EventEmitter = require('events');
 class Emitter extends EventEmitter {};
 // Initilize object
 const myEmitter = new Emitter();
-
+myEmitter.on('log',(msg,fileName) => logEvents(msg,fileName));
 const PORT = process.env.PORT || 3500;
+
+const serveFlie = async (filePath, contentType, response) => {
+    try {
+        const rawData = await fsPromises.readFile(
+            filePath,
+             !contentType.includes('image') ? 'utf-8' : ''
+            );
+        const data =contentType === 'application/json' ? JSON.parse(rawData) : rawData;
+        response.writeHead(
+            filePath.includes('404.html') ? 404 : 200,
+            {'Content-Type': contentType}
+         );
+        response.end(
+            contentType ===  'application/json' ? JSON.stringify(data) : data
+        );
+    } catch (error) {
+        console.log(error);
+        myEmitter.emit('log',`${error.name}:${error.message}`, 'errorLog.txt');
+        response.statusCode = 500;
+        response.end();
+    }
+}
 
 const server = http.createServer((req, res) => {
     console.log(req.url, req.method);
+    myEmitter.emit('log',`${req.url}\t${req.method}`, 'reqLog.txt');
     const extension = path.extname(req.url);
     let contentType;
 
@@ -39,6 +62,35 @@ const server = http.createServer((req, res) => {
             contentType = 'text/html';
     }
 
+    let filePath = contentType === 'text/html' && req.url === '/' ? path.join(__dirname, 'views', 'index.html') : contentType === 'text/html' && req.url.slice(-1) === '/' ? path.join(__dirname, 'views', req.url, 'index.html') : contentType === 'text/html' ? path.join(__dirname, 'views', req.url) : path.join(__dirname, req.url);
+    // make .html not required in the browser
+    if (!extension && req.url.slice(-1) !== '/') filePath += '.html';
+
+    const fileExists = fs.existsSync(filePath);
+
+    if (fileExists) {
+        // serve the file 
+        serveFlie(filePath, contentType, res);
+    } else {
+        // 404 or 301(redirect)
+        switch (path.parse(filePath).base) {
+            case 'old-page.html':
+                res.writeHead(301, {
+                    'Location': '/new-page.html'
+                });
+                res.end();
+                break;
+            case 'www-page.html':
+                res.writeHead(301, {
+                    'Location': '/'
+                });
+                res.end();
+                break;
+            default:
+                // serve a 404 response
+                serveFlie(path.join(__dirname,'views','404.html'), 'text/html', res);
+        }
+    }
 
 });
 
@@ -72,9 +124,9 @@ server.listen(PORT, () => {
 
 
 // add listner for the log events
-// myEmitter.on('log',(msg) => logEvents(msg));
+
+   
 
 // setTimeout(() => {
 //     Emit events
-//     myEmitter.emit('log','log event emmited!');
 // },2000);

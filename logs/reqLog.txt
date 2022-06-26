@@ -1,0 +1,9 @@
+20220626	21:28:45	aaed82bc-af6f-48fa-adaa-7bdabc542e3c	/new-page.html	GET
+20220626	21:28:45	5273d029-2da7-4c9a-baae-be5d82ee5c19	/css/style.css	GET
+20220626	21:28:45	9fe365d5-f83a-4741-b99a-ae19af871827	/img/Charles.jpg	GET
+20220626	21:30:25	0036a841-b597-4076-b3be-0d63ca199492	/new-page.html	GET
+20220626	21:30:44	ee31acce-6fba-4545-a94d-b8eeca703cf8	/new-page.html	GET
+20220626	21:30:44	5c56966a-fc03-4832-acfc-9831341060bc	/css/style.css	GET
+20220626	21:30:44	0c0e7385-374d-484d-abb1-e485265f48d0	/img/Charles.jpg	GET
+20220626	21:31:58	bab69534-2644-4b95-9408-60f5324e5573	/	GET
+20220626	21:31:58	050aea53-02ed-4e8c-8679-aae0708fc3b3	/css/style.css	GET
